@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap');
+
+$text: #112;
+$primary: #FF8907;
+$primaryText: #fff;
+$background: #efeffe;
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter Tight', Arial, sans-serif;
+  color: $text;
+  background-color: $background;
+
+  &::after { // background overlay
+    content: '';
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url('assets/background.jpg') center center / cover no-repeat;
+    opacity: .12;
+    pointer-events: none;
+  }
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 1rem;
+}
+
+.title {
+  max-width: 6em;
+}
+
+.baseline {
+  width: 10.1em;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.chooseButton {
+  padding: 1em 2em;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primaryText;
+  background-color: $primary;
+  border: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .1s ease-out;
+
+  &:hover {
+    color: $primary;
+    background-color: $primaryText;
+    box-shadow: 0 1em 1em rgba($primary, .1);
+  }
+
+  .has-result & {
+    display: none;
+  }
+}
+
+.resetButton {
+  display: none;
+  align-items: center;
+  gap: .33em;
+  font-size: 1rem;
+  line-height: 1;
+  background: none;
+  border: 0;
+  cursor: pointer;
+
+  .has-result & {
+    display: inline-flex;
+  }
+
+  &::before {
+    content: '🔃';
+  }
+}
+
+.results {
+  font-size: 2rem;
+}

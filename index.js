@@ -1,29 +1,23 @@
-const choiceList = [
-    'African',
-    'Burger King',
-    'Dock\'s café',
-    'Dragon Wok',
-    'Hippopotamus',
-    'Kebab',
-    'Lebanon',
-    'Mc Donald',
-    'Mushi Mushi',
-    'Naturalia',
-    'Subway',
-    'Sushi / Japanese',
-    'Thaï',
-    'Bakery',
-];
+import places from './assets/places.json';
 
 const getChoice = function () {
-    return choiceList[Math.floor(Math.random() * choiceList.length)];
+    const place = places[Math.floor(Math.random() * places.length)]
+    return `${place.name}\n(${place.type})`;
 };
 
 const chooseAction = function (e) {
     e.preventDefault();
     const container = document.querySelector('.results');
     container.textContent = getChoice();
-    e.currentTarget.style.display = 'none';
+    document.querySelector('body').classList.add('has-result');
 };
 
-document.querySelector('.chooseButton').addEventListener('click', chooseAction)
+const resetAction = function (e) {
+    e.preventDefault();
+    const container = document.querySelector('.results');
+    container.textContent = null;
+    document.querySelector('body').classList.remove('has-result');
+};
+
+document.querySelector('.chooseButton').addEventListener('click', chooseAction);
+document.querySelector('.resetButton').addEventListener('click', resetAction);

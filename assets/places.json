@@ -1,0 +1,136 @@
+[
+  {
+    "name": "African",
+    "type": "African",
+    "food": []
+  },
+  {
+    "name": "Burger King",
+    "type": "Fast-food",
+    "food": [
+      "Burger"
+    ]
+  },
+  {
+    "name": "Efendi",
+    "type": "Fast-food",
+    "food": [
+      "Kebab"
+    ]
+  },
+  {
+    "name": "Dock's café",
+    "type": "Brasserie",
+    "food": [
+      "Burger",
+      "Steak"
+    ]
+  },
+  {
+    "name": "Dragon Wok",
+    "type": "Asian street food",
+    "food": [
+      "Rice",
+      "Wok",
+      "Soup"
+    ]
+  },
+  {
+    "name": "Hippopotamus",
+    "type": "Steak house",
+    "food": [
+      "Burger",
+      "Steak"
+    ]
+  },
+  {
+    "name": "Kebab",
+    "type": "Fast-food",
+    "food": [
+      "Sandwich",
+      "Plates"
+    ]
+  },
+  {
+    "name": "Lebanon",
+    "type": "Fast-food",
+    "food": [
+      "mezze"
+    ]
+  },
+  {
+    "name": "resto qui fait l'angle",
+    "type": "Brasserie",
+    "food": [
+      "burger"
+    ]
+  },
+  {
+    "name": "Mc Donald",
+    "type": "Fast-food",
+    "food": [
+      "Burger"
+    ]
+  },
+  {
+    "name": "Mushi Mushi",
+    "type": "Asian",
+    "food": [
+      "Bò-bun",
+      "Phò"
+    ]
+  },
+  {
+    "name": "Naturalia",
+    "type": "Organic shop",
+    "food": [
+      "Salad"
+    ]
+  },
+  {
+    "name": "Subway",
+    "type": "Fast-food",
+    "food": [
+      "Sandwich"
+    ]
+  },
+  {
+    "name": "O'Pays",
+    "type": "Caribbean",
+    "food": [
+      "Bowl",
+      "Sandwich"
+    ]
+  },
+  {
+    "name": "Sushi / Japanese",
+    "type": "Japanese",
+    "food": [
+      "Maki",
+      "Sushi"
+    ]
+  },
+  {
+    "name": "Thaï",
+    "type": "Thaï",
+    "food": [
+      "Nems",
+      "Rice",
+      "Noodles"
+    ]
+  },
+  {
+    "name": "Bakery",
+    "type": "Bakery",
+    "food": [
+      "Sandwich"
+    ]
+  },
+  {
+    "name": "Belluci",
+    "type": "Brasserie / Burger",
+    "food": [
+      "Burger"
+    ]
+  }
+]

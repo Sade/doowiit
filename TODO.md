@@ -1,14 +1,16 @@
 # Doowiit
-Do we eat? Choose where to have lunch today?
+Do we eat? Choose where to have lunch today!
 
 ### Todo
-- [ ] add reset button
 - [ ] add choice counter
 - [ ] add choice votes
+- [ ] add choice comments
 - [ ] code as components
-- [ ] add SCSS support
-- [ ] add JSON source
-- [ ] add fancy user interface
+- [ ] add i18n
  
 ### Done ✓
 - [x] Init repo
+- [x] add SCSS support
+- [x] add reset button
+- [x] add JSON source
+- [x] add fancy user interface
